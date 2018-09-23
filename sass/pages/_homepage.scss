@@ -1,0 +1,48 @@
+#homepage_content {
+    position: relative;
+    margin-top: 30px;
+    img.bshome {
+        position: absolute;
+        left: 245px;
+        top: -20px;
+    }
+    img.conversation_home {
+        position: absolute;
+        right: 240px;
+        top: 20px;
+    }
+    .homepage_title {
+        color: $green;
+        font-size: 42px;
+    }
+    .home_content {
+        padding: 30px 0 10px;
+        .repas_gris, .repas_diet, .boissons_energy, .complements {
+            display: flex;
+            @include border-radius(5px);
+            margin-bottom: 20px;
+            padding: 60px 10px 35px 50px;
+            .text {
+                width: 50%;
+            }
+            .homepage_img {
+                justify-content: flex-end;
+                width: 50%;
+            }
+        }
+        .repas_gris {            
+            background: linear-gradient(135deg, #FDFDFD, #D9D9D9);
+        }
+        .repas_diet {            
+            background: linear-gradient(135deg, #B1FFCF, #2CD06C);
+        }
+        .boissons_energy {            
+            background: linear-gradient(135deg, #FFAF89, #FA6F2E);
+        }
+        .complements {            
+            background: linear-gradient(135deg, #FFF5AA, #E8CC00);
+        }
+    }
+
+        
+}

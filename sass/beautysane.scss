@@ -1,0 +1,11 @@
+/* BASE */
+@import 'reset';
+@import 'settings';
+@import 'mixin';
+@import 'base';
+
+
+/* PARTIALS */
+@import 'pages/header';
+@import 'pages/homepage';
+@import 'pages/footer';

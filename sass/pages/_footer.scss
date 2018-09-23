@@ -1,0 +1,280 @@
+/* FOOTER */
+footer {
+    background : $dark;
+    color: $lighter_grey;
+    font-family: 'Dosis', sans-serif;
+
+    /* footer_col1 */  
+    .footer_col1 {
+        margin-top: 40px;
+        .newsletter {
+            margin: 30px 0;
+        }        
+        .myform {
+            input{
+                display: block;
+                background: transparent;
+                margin: 30px 0;
+                border: none;
+                border-bottom: 1px solid $light_grey;
+                line-height: 30px; 
+                font-size: 16px;              
+                &::placeholder {
+                    color:$lighter_grey;
+                    font-family: 'Dosis', sans-serif;
+                }
+            }
+            .styled-checkbox {
+                @include checkbox;
+            }
+            input[type="checkbox"]{
+                display: inline;
+                line-height:20px;
+                margin: 8px 0;        
+            }
+            input.btn{
+                @include button (transparent,transparent, $light_grey);
+            }
+            span {
+                padding-left: 10px;
+                
+                a {
+                    color: $lighter_grey;
+                }
+            }
+        }
+    }
+    
+    /* footer_col2 */  
+    .footer_col2 {
+        margin-top: 30%;
+        .paiement, .livraison_gratuite, .livraison_48 {
+            margin-bottom: 30px;
+            display: flex;
+            img {
+                margin-right: 25px;
+            }
+            h5 {
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    /* footer_col3 */ 
+    .footer_col3 {
+        padding-top: 100px;
+        ul {
+            li {
+                list-style-type: none;                
+                padding: 7px 0;
+                a {                    
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: $lighter_grey;
+                }
+            }
+        }
+    }
+
+    /* footer_col4 */
+    .footer_col4 {
+        padding: 100px 0 0 70px;
+        ul {            
+            li {
+                list-style-type: none;
+                padding: 7px 0;
+                a {                    
+                    text-decoration: none;
+                    color: $light_grey;
+                }
+            }
+        }
+    }
+
+    /* footer_col5 */
+    .footer_col5 {
+        margin-top: 12%;
+        text-align: right;
+        ul {
+            text-transform: uppercase;
+            margin-bottom: 55px;
+            li {
+                list-style-type: none;
+                display: inline-block;                               
+                a {                    
+                    text-decoration: none;
+                    padding: 0 10px;
+                    font-size: 14px;
+                    color: $white;
+                    font-weight: 700;
+                }
+                &:after {
+                    content: "";
+                    border-left: 1px solid #f8f9fa;
+                }
+                &:nth-of-type(4):after {
+                    border: none;
+                }
+            }
+        }
+        .addresse_info {
+            span {
+                line-height: 26px;
+            }
+            span[itemprop="name"] {
+                text-transform: uppercase;
+                font-size: 16px;
+            }
+        }
+        .other_info {
+            margin: 60px 0;
+        }
+        .mob_app {
+            margin-top: 30px;
+            img:nth-last-of-type(1){
+                padding-left: 15px;
+            }
+        }
+    }
+    .footer_separator {
+        background: $grey;
+        width: 100%;
+        height: 2px;
+    }
+    .copyright_text {
+        padding: 20px 0;
+        p {
+            text-transform: uppercase;
+            font-weight: 700;
+        }
+        ul.social_icons{        
+            li {
+                list-style-type: none;
+                display: inline-block;
+                padding: 0 5px;           
+                a{
+                    text-decoration: none;
+                    height: 30px;
+                    width: 30px;
+                    display: block;                
+                }
+            }
+        } 
+    }
+    
+}
+
+
+/* ----------------------- MEDIA QUERIES ------------------------------ */
+
+
+/* TABLET LANDSCAPE */
+@media screen and (max-width: 64em){
+    footer {
+        .footer_col1 {
+            margin-top: 10%;
+        }
+        .footer_col2 {
+            margin-top: 40%;
+        }
+        .footer_col3 {
+            margin-top: 10%;
+        }
+        .footer_col4 {
+            margin-top: 12%;
+            margin-left: 0;
+        }
+        .footer_col5 {
+            margin-top: 7%;
+        }
+        .copyright_text {
+            margin: 30px 0 0;
+        }
+    }
+}
+
+/* TABLET */
+@media screen and (max-width: 48em) {
+    footer {
+        .footer_col1{
+            .newsletter {
+                max-width: 100%;
+            }
+            .myform input {
+                width: 100%;
+            }
+            form {
+                text-align: left;
+                input[type="checkbox"] {
+                    width: auto;
+                }                
+            }
+        }
+
+        .footer_col2{
+            margin-top: 10%;
+            .paiement, .livraison_gratuite, .livraison_48 {
+                display: block;
+                img {
+                    margin: 0;
+                }
+            }
+            .text {
+                text-align: center;
+            }
+        }
+        .footer_col3 {
+            margin-top: 10%;
+        }
+        .footer_col4 {
+            margin-top: 10%;
+            margin-left: 0;
+        }
+        .footer_col5 {
+            text-align: center;
+            .mob_app {
+                display: block;
+            }
+        }
+        .copyright_text {
+            margin: 25px 0 0;
+        }
+    }
+}
+
+
+
+/* MOBILE */
+//@media screen and (max-width: 40em) {
+//     footer{
+//         .footer_col2{
+//             margin-top: 10%;
+//             .paiement, .livraison_gratuite, .livraison_48 {
+//                 display: block;
+//                 img {
+//                     margin: 0;
+//                 }
+//             }
+//             .text {
+//                 text-align: center;
+//             }
+//         }
+//         .footer_col3 {
+//             margin-top: 10%;
+//         }
+//         .footer_col4 {
+//             margin-top: 10%;
+//             margin-left: 0;
+//         }
+//         .footer_col5 {
+//             text-align: center;
+//             .mob_app {
+//                 display: block;
+//             }
+//         }
+//         .copyright_text {
+//             margin: 25px 0 0;
+//         }
+        
+//     }
+// }

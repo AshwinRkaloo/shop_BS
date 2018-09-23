@@ -1,0 +1,46 @@
+@font-face {
+    font-family: Goudar;
+    src: url('./fonts/goudarHL-regular.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrap {
+    width: 1440px;
+    margin: 0 auto;
+}
+h5 {
+    font-size: 15px;
+    line-height: 24px;
+}
+li {
+    list-style-type : none;
+}
+a {
+    text-decoration: none;
+}
+.product_title {
+    font-size: 72px;
+    color: $dark;
+}
+.product_sub_home {
+    font-size: 48px;
+    color: $dark;
+}
+.details {
+    font-size: 16px;
+    color: $dark_grey;
+    max-width: 200px;
+}
+.discover_link {
+    text-decoration: none;
+    font-size: 18px;
+    color: $dark;
+    border: none;
+    border-bottom: 2px solid #222222;
+    width: 30px;
+    height: 2px;
+    padding-bottom:5px;
+}

@@ -1,0 +1,520 @@
+/* BASE */
+/* line 1, ../sass/_reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+/* line 22, ../sass/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 26, ../sass/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 29, ../sass/_reset.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 32, ../sass/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 35, ../sass/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 40, ../sass/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* COULEURS */
+@font-face {
+  font-family: Goudar;
+  src: url("./fonts/goudarHL-regular.otf"); }
+/* line 6, ../sass/_base.scss */
+body {
+  margin: 0;
+  padding: 0; }
+
+/* line 10, ../sass/_base.scss */
+.wrap {
+  width: 1440px;
+  margin: 0 auto; }
+
+/* line 14, ../sass/_base.scss */
+h5 {
+  font-size: 15px;
+  line-height: 24px; }
+
+/* line 18, ../sass/_base.scss */
+li {
+  list-style-type: none; }
+
+/* line 21, ../sass/_base.scss */
+a {
+  text-decoration: none; }
+
+/* line 24, ../sass/_base.scss */
+.product_title {
+  font-size: 72px;
+  color: #222222; }
+
+/* line 28, ../sass/_base.scss */
+.product_sub_home {
+  font-size: 48px;
+  color: #222222; }
+
+/* line 32, ../sass/_base.scss */
+.details {
+  font-size: 16px;
+  color: #444444;
+  max-width: 200px; }
+
+/* line 37, ../sass/_base.scss */
+.discover_link {
+  text-decoration: none;
+  font-size: 18px;
+  color: #222222;
+  border: none;
+  border-bottom: 2px solid #222222;
+  width: 30px;
+  height: 2px;
+  padding-bottom: 5px; }
+
+/* PARTIALS */
+/* line 1, ../sass/pages/_header.scss */
+header {
+  padding-top: 60px; }
+  /* line 3, ../sass/pages/_header.scss */
+  header a, header h5, header p, header small, header input, header span {
+    color: #1e1e1e; }
+  /* line 7, ../sass/pages/_header.scss */
+  header nav ul {
+    padding-bottom: 15px;
+    border-bottom: 1px solid grey; }
+    /* line 10, ../sass/pages/_header.scss */
+    header nav ul li {
+      display: inline-block;
+      padding-right: 20px;
+      font-size: 20px; }
+      /* line 14, ../sass/pages/_header.scss */
+      header nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase; }
+      /* line 18, ../sass/pages/_header.scss */
+      header nav ul li .active {
+        border-bottom: 2px solid #00BA4C;
+        margin-top: 10px; }
+  /* line 24, ../sass/pages/_header.scss */
+  header nav ul.submenu {
+    border-bottom: 1px solid grey;
+    padding-top: 15px; }
+    /* line 27, ../sass/pages/_header.scss */
+    header nav ul.submenu li {
+      display: inline-block;
+      padding-right: 20px;
+      font-size: 16px; }
+      /* line 31, ../sass/pages/_header.scss */
+      header nav ul.submenu li a {
+        text-decoration: none;
+        text-transform: uppercase; }
+      /* line 35, ../sass/pages/_header.scss */
+      header nav ul.submenu li .active {
+        border-bottom: 2px solid #00BA4C;
+        margin-top: 10px; }
+  /* line 43, ../sass/pages/_header.scss */
+  header .side_menu ul {
+    text-transform: uppercase; }
+    /* line 45, ../sass/pages/_header.scss */
+    header .side_menu ul li {
+      list-style-type: none;
+      display: inline-block;
+      font-size: 14px; }
+      /* line 49, ../sass/pages/_header.scss */
+      header .side_menu ul li a {
+        padding: 0 10px;
+        color: #00BA4C; }
+      /* line 53, ../sass/pages/_header.scss */
+      header .side_menu ul li:after {
+        content: "";
+        border-left: 1px solid #00BA4C; }
+      /* line 57, ../sass/pages/_header.scss */
+      header .side_menu ul li .myselect {
+        background: transparent;
+        color: #00BA4C; }
+      /* line 61, ../sass/pages/_header.scss */
+      header .side_menu ul li .myoption {
+        background: transparent;
+        color: #000; }
+      /* line 65, ../sass/pages/_header.scss */
+      header .side_menu ul li .dropdown {
+        top: 30px; }
+      /* line 68, ../sass/pages/_header.scss */
+      header .side_menu ul li .dropdown-menu {
+        min-width: 3.5em;
+        text-align: center; }
+      /* line 72, ../sass/pages/_header.scss */
+      header .side_menu ul li .dropdown-item {
+        color: #000; }
+        /* line 74, ../sass/pages/_header.scss */
+        header .side_menu ul li .dropdown-item:hover {
+          background: #1e1e1e;
+          color: #f8f9fa; }
+  /* line 84, ../sass/pages/_header.scss */
+  header #submenu ul {
+    max-width: 800px;
+    margin: 0 auto; }
+    /* line 87, ../sass/pages/_header.scss */
+    header #submenu ul li {
+      display: inline-block;
+      font-size: 18px; }
+      /* line 90, ../sass/pages/_header.scss */
+      header #submenu ul li a {
+        text-decoration: none; }
+
+/* line 1, ../sass/pages/_homepage.scss */
+#homepage_content {
+  position: relative;
+  margin-top: 30px; }
+  /* line 4, ../sass/pages/_homepage.scss */
+  #homepage_content img.bshome {
+    position: absolute;
+    left: 245px;
+    top: -20px; }
+  /* line 9, ../sass/pages/_homepage.scss */
+  #homepage_content img.conversation_home {
+    position: absolute;
+    right: 240px;
+    top: 20px; }
+  /* line 14, ../sass/pages/_homepage.scss */
+  #homepage_content .homepage_title {
+    color: #00BA4C;
+    font-size: 42px; }
+  /* line 18, ../sass/pages/_homepage.scss */
+  #homepage_content .home_content {
+    padding: 30px 0 10px; }
+    /* line 20, ../sass/pages/_homepage.scss */
+    #homepage_content .home_content .repas_gris, #homepage_content .home_content .repas_diet, #homepage_content .home_content .boissons_energy, #homepage_content .home_content .complements {
+      display: flex;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 60px 10px 35px 50px; }
+      /* line 25, ../sass/pages/_homepage.scss */
+      #homepage_content .home_content .repas_gris .text, #homepage_content .home_content .repas_diet .text, #homepage_content .home_content .boissons_energy .text, #homepage_content .home_content .complements .text {
+        width: 50%; }
+      /* line 28, ../sass/pages/_homepage.scss */
+      #homepage_content .home_content .repas_gris .homepage_img, #homepage_content .home_content .repas_diet .homepage_img, #homepage_content .home_content .boissons_energy .homepage_img, #homepage_content .home_content .complements .homepage_img {
+        justify-content: flex-end;
+        width: 50%; }
+    /* line 33, ../sass/pages/_homepage.scss */
+    #homepage_content .home_content .repas_gris {
+      background: linear-gradient(135deg, #FDFDFD, #D9D9D9); }
+    /* line 36, ../sass/pages/_homepage.scss */
+    #homepage_content .home_content .repas_diet {
+      background: linear-gradient(135deg, #B1FFCF, #2CD06C); }
+    /* line 39, ../sass/pages/_homepage.scss */
+    #homepage_content .home_content .boissons_energy {
+      background: linear-gradient(135deg, #FFAF89, #FA6F2E); }
+    /* line 42, ../sass/pages/_homepage.scss */
+    #homepage_content .home_content .complements {
+      background: linear-gradient(135deg, #FFF5AA, #E8CC00); }
+
+/* FOOTER */
+/* line 2, ../sass/pages/_footer.scss */
+footer {
+  background: #222222;
+  color: #CCCCCC;
+  font-family: 'Dosis', sans-serif;
+  /* footer_col1 */
+  /* footer_col2 */
+  /* footer_col3 */
+  /* footer_col4 */
+  /* footer_col5 */ }
+  /* line 8, ../sass/pages/_footer.scss */
+  footer .footer_col1 {
+    margin-top: 40px; }
+    /* line 10, ../sass/pages/_footer.scss */
+    footer .footer_col1 .newsletter {
+      margin: 30px 0; }
+    /* line 14, ../sass/pages/_footer.scss */
+    footer .footer_col1 .myform input {
+      display: block;
+      background: transparent;
+      margin: 30px 0;
+      border: none;
+      border-bottom: 1px solid #999;
+      line-height: 30px;
+      font-size: 16px; }
+      /* line 22, ../sass/pages/_footer.scss */
+      footer .footer_col1 .myform input::placeholder {
+        color: #CCCCCC;
+        font-family: 'Dosis', sans-serif; }
+    /* line 31, ../sass/_mixin.scss */
+    footer .footer_col1 .myform .styled-checkbox .styled-checkbox {
+      position: absolute;
+      opacity: 0; }
+      /* line 35, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox + label {
+        position: relative;
+        cursor: pointer;
+        padding: 0; }
+      /* line 42, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox + label:before {
+        content: '';
+        margin-right: 10px;
+        display: inline-block;
+        vertical-align: text-top;
+        width: 15px;
+        height: 15px;
+        background: transparent;
+        border: 1px solid #CCC; }
+      /* line 54, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:hover + label:before {
+        background: #fff; }
+      /* line 59, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:focus + label:before {
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.12); }
+      /* line 64, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:checked + label:before {
+        background: #CCC; }
+      /* line 69, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:disabled + label {
+        color: #b8b8b8;
+        cursor: auto; }
+      /* line 75, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:disabled + label:before {
+        box-shadow: none;
+        background: #ddd; }
+      /* line 81, ../sass/_mixin.scss */
+      footer .footer_col1 .myform .styled-checkbox .styled-checkbox:checked + label:after {
+        content: '';
+        position: absolute;
+        left: 4px;
+        top: 9px;
+        background: white;
+        width: 2px;
+        height: 2px;
+        box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white, 4px -6px 0 white, 4px -8px 0 white;
+        transform: rotate(45deg); }
+    /* line 30, ../sass/pages/_footer.scss */
+    footer .footer_col1 .myform input[type="checkbox"] {
+      display: inline;
+      line-height: 20px;
+      margin: 8px 0; }
+    /* line 35, ../sass/pages/_footer.scss */
+    footer .footer_col1 .myform input.btn {
+      -webkit-border-radius: 25px;
+      -moz-border-radius: 25px;
+      -ms-border-radius: 25px;
+      border-radius: 25px;
+      text-transform: uppercase;
+      border: 1px solid #999;
+      padding: 0 30px;
+      color: #999;
+      font-weight: 700;
+      font-size: 12px;
+      background-color: transparent;
+      box-sizing: border-box;
+      transition: all 0.3s ease-in;
+      position: relative; }
+      /* line 23, ../sass/_mixin.scss */
+      footer .footer_col1 .myform input.btn:hover {
+        background: transparent; }
+    /* line 38, ../sass/pages/_footer.scss */
+    footer .footer_col1 .myform span {
+      padding-left: 10px; }
+      /* line 41, ../sass/pages/_footer.scss */
+      footer .footer_col1 .myform span a {
+        color: #CCCCCC; }
+  /* line 49, ../sass/pages/_footer.scss */
+  footer .footer_col2 {
+    margin-top: 30%; }
+    /* line 51, ../sass/pages/_footer.scss */
+    footer .footer_col2 .paiement, footer .footer_col2 .livraison_gratuite, footer .footer_col2 .livraison_48 {
+      margin-bottom: 30px;
+      display: flex; }
+      /* line 54, ../sass/pages/_footer.scss */
+      footer .footer_col2 .paiement img, footer .footer_col2 .livraison_gratuite img, footer .footer_col2 .livraison_48 img {
+        margin-right: 25px; }
+      /* line 57, ../sass/pages/_footer.scss */
+      footer .footer_col2 .paiement h5, footer .footer_col2 .livraison_gratuite h5, footer .footer_col2 .livraison_48 h5 {
+        text-transform: uppercase; }
+  /* line 64, ../sass/pages/_footer.scss */
+  footer .footer_col3 {
+    padding-top: 100px; }
+    /* line 67, ../sass/pages/_footer.scss */
+    footer .footer_col3 ul li {
+      list-style-type: none;
+      padding: 7px 0; }
+      /* line 70, ../sass/pages/_footer.scss */
+      footer .footer_col3 ul li a {
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #CCCCCC; }
+  /* line 80, ../sass/pages/_footer.scss */
+  footer .footer_col4 {
+    padding: 100px 0 0 70px; }
+    /* line 83, ../sass/pages/_footer.scss */
+    footer .footer_col4 ul li {
+      list-style-type: none;
+      padding: 7px 0; }
+      /* line 86, ../sass/pages/_footer.scss */
+      footer .footer_col4 ul li a {
+        text-decoration: none;
+        color: #999; }
+  /* line 95, ../sass/pages/_footer.scss */
+  footer .footer_col5 {
+    margin-top: 12%;
+    text-align: right; }
+    /* line 98, ../sass/pages/_footer.scss */
+    footer .footer_col5 ul {
+      text-transform: uppercase;
+      margin-bottom: 55px; }
+      /* line 101, ../sass/pages/_footer.scss */
+      footer .footer_col5 ul li {
+        list-style-type: none;
+        display: inline-block; }
+        /* line 104, ../sass/pages/_footer.scss */
+        footer .footer_col5 ul li a {
+          text-decoration: none;
+          padding: 0 10px;
+          font-size: 14px;
+          color: #fff;
+          font-weight: 700; }
+        /* line 111, ../sass/pages/_footer.scss */
+        footer .footer_col5 ul li:after {
+          content: "";
+          border-left: 1px solid #f8f9fa; }
+        /* line 115, ../sass/pages/_footer.scss */
+        footer .footer_col5 ul li:nth-of-type(4):after {
+          border: none; }
+    /* line 121, ../sass/pages/_footer.scss */
+    footer .footer_col5 .addresse_info span {
+      line-height: 26px; }
+    /* line 124, ../sass/pages/_footer.scss */
+    footer .footer_col5 .addresse_info span[itemprop="name"] {
+      text-transform: uppercase;
+      font-size: 16px; }
+    /* line 129, ../sass/pages/_footer.scss */
+    footer .footer_col5 .other_info {
+      margin: 60px 0; }
+    /* line 132, ../sass/pages/_footer.scss */
+    footer .footer_col5 .mob_app {
+      margin-top: 30px; }
+      /* line 134, ../sass/pages/_footer.scss */
+      footer .footer_col5 .mob_app img:nth-last-of-type(1) {
+        padding-left: 15px; }
+  /* line 139, ../sass/pages/_footer.scss */
+  footer .footer_separator {
+    background: #666666;
+    width: 100%;
+    height: 2px; }
+  /* line 144, ../sass/pages/_footer.scss */
+  footer .copyright_text {
+    padding: 20px 0; }
+    /* line 146, ../sass/pages/_footer.scss */
+    footer .copyright_text p {
+      text-transform: uppercase;
+      font-weight: 700; }
+    /* line 151, ../sass/pages/_footer.scss */
+    footer .copyright_text ul.social_icons li {
+      list-style-type: none;
+      display: inline-block;
+      padding: 0 5px; }
+      /* line 155, ../sass/pages/_footer.scss */
+      footer .copyright_text ul.social_icons li a {
+        text-decoration: none;
+        height: 30px;
+        width: 30px;
+        display: block; }
+
+/* ----------------------- MEDIA QUERIES ------------------------------ */
+/* TABLET LANDSCAPE */
+@media screen and (max-width: 64em) {
+  /* line 174, ../sass/pages/_footer.scss */
+  footer .footer_col1 {
+    margin-top: 10%; }
+  /* line 177, ../sass/pages/_footer.scss */
+  footer .footer_col2 {
+    margin-top: 40%; }
+  /* line 180, ../sass/pages/_footer.scss */
+  footer .footer_col3 {
+    margin-top: 10%; }
+  /* line 183, ../sass/pages/_footer.scss */
+  footer .footer_col4 {
+    margin-top: 12%;
+    margin-left: 0; }
+  /* line 187, ../sass/pages/_footer.scss */
+  footer .footer_col5 {
+    margin-top: 7%; }
+  /* line 190, ../sass/pages/_footer.scss */
+  footer .copyright_text {
+    margin: 30px 0 0; } }
+/* TABLET */
+@media screen and (max-width: 48em) {
+  /* line 200, ../sass/pages/_footer.scss */
+  footer .footer_col1 .newsletter {
+    max-width: 100%; }
+  /* line 203, ../sass/pages/_footer.scss */
+  footer .footer_col1 .myform input {
+    width: 100%; }
+  /* line 206, ../sass/pages/_footer.scss */
+  footer .footer_col1 form {
+    text-align: left; }
+    /* line 208, ../sass/pages/_footer.scss */
+    footer .footer_col1 form input[type="checkbox"] {
+      width: auto; }
+  /* line 214, ../sass/pages/_footer.scss */
+  footer .footer_col2 {
+    margin-top: 10%; }
+    /* line 216, ../sass/pages/_footer.scss */
+    footer .footer_col2 .paiement, footer .footer_col2 .livraison_gratuite, footer .footer_col2 .livraison_48 {
+      display: block; }
+      /* line 218, ../sass/pages/_footer.scss */
+      footer .footer_col2 .paiement img, footer .footer_col2 .livraison_gratuite img, footer .footer_col2 .livraison_48 img {
+        margin: 0; }
+    /* line 222, ../sass/pages/_footer.scss */
+    footer .footer_col2 .text {
+      text-align: center; }
+  /* line 226, ../sass/pages/_footer.scss */
+  footer .footer_col3 {
+    margin-top: 10%; }
+  /* line 229, ../sass/pages/_footer.scss */
+  footer .footer_col4 {
+    margin-top: 10%;
+    margin-left: 0; }
+  /* line 233, ../sass/pages/_footer.scss */
+  footer .footer_col5 {
+    text-align: center; }
+    /* line 235, ../sass/pages/_footer.scss */
+    footer .footer_col5 .mob_app {
+      display: block; }
+  /* line 239, ../sass/pages/_footer.scss */
+  footer .copyright_text {
+    margin: 25px 0 0; } }
+/* MOBILE */

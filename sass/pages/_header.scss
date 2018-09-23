@@ -1,0 +1,97 @@
+header {
+    padding-top: 60px;
+    a, h5, p, small, input, span{
+        color: #1e1e1e;
+    }
+    nav {        
+        ul {
+            padding-bottom: 15px;
+            border-bottom: 1px solid grey;
+            li {
+                display: inline-block;
+                padding-right: 20px;
+                font-size: 20px;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .active {
+                    border-bottom: 2px solid $green;
+                    margin-top: 10px;
+                }
+            }
+        }
+        ul.submenu {
+            border-bottom: 1px solid grey;
+            padding-top: 15px;
+            li {
+                display: inline-block;
+                padding-right: 20px;
+                font-size: 16px;
+                a {
+                    text-decoration: none;
+                    text-transform: uppercase;
+                }
+                .active {
+                    border-bottom: 2px solid $green;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .side_menu {
+        ul {
+            text-transform: uppercase;
+            li {
+                list-style-type: none;
+                display: inline-block; 
+                font-size: 14px;                             
+                a {                    
+                    padding: 0 10px;
+                    color: $green;  
+                }
+                &:after {
+                    content: "";
+                    border-left: 1px solid $green;
+                }
+                .myselect {
+                    background: transparent;
+                    color: $green;                    
+                }
+                .myoption {
+                    background: transparent;;
+                    color: #000;                    
+                }
+                .dropdown {
+                    top: 30px;
+                }
+                .dropdown-menu {
+                    min-width: 3.5em;
+                    text-align:center;
+                }
+                .dropdown-item {
+                    color: #000;
+                    &:hover {
+                        background: #1e1e1e;
+                        color: #f8f9fa;
+                    }
+                }
+            }
+        }
+    }
+
+    #submenu {
+        ul {
+            max-width: 800px;
+            margin: 0 auto;
+            li {
+                display: inline-block;
+                font-size: 18px;
+               a {
+                    
+                    text-decoration: none;
+               }
+            }
+        }
+    }
+}
